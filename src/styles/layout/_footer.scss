@@ -1,0 +1,23 @@
+@use '../foundation/variable' as var;
+
+.l-footer {
+
+    display: block;
+    height: 80px;
+    width: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: var.$baseColorLV2;
+
+    nav {
+        display: block;
+        padding: 16px 0;
+    }
+
+    .l-footer--link {
+        font-size: 0.8rem;
+        color: #353335;
+        display: inline-block;
+        margin: 0 8px;
+    }
+}

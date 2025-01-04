@@ -1,0 +1,9 @@
+@use '../foundation/variable' as var;
+
+.c-emotions {
+    margin-top: 10px;
+    label {
+        cursor: pointer;
+        padding: 20px;
+    }
+}

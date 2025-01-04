@@ -1,0 +1,12 @@
+@use '../foundation/variable' as var;
+
+.l-header {
+    display: flex;
+    background-color: var.$baseColorLV2;
+    height: 40px;
+    padding: 5px 15px;
+
+    div {
+       margin-left: auto;
+    }
+}

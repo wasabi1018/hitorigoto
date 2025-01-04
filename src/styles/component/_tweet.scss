@@ -1,0 +1,17 @@
+@use '../foundation/variable' as var;
+
+.c-tweet {
+    resize: none;
+    height: 210px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 100px;
+    border-color: var.$baseColorLV2;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 8px var.$baseColorLV2;
+        border-color: var.$baseColorLV2;
+    }
+}
