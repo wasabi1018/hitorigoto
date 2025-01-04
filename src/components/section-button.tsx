@@ -8,8 +8,8 @@ type SetctionButtonProps = {
 /** セクション ボタン */
 const SectionButton = ({ buttonName }: SetctionButtonProps) => {
     return (
-        <div>
-            <button className='c-button u-mt-10'>
+        <div className='c-button'>
+            <button className='u-mt-10'>
                 { buttonName }
             </button>
         </div>

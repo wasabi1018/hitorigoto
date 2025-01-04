@@ -6,8 +6,13 @@
     width: 400px;
     border-radius: 20px;
     padding: 15px;
-    margin-left: 100px;
+    margin-left: 20px;
     border-color: var.$baseColorLV2;
+
+    @media (max-width: 800px) {
+        height: 400px;
+        width: 300px;
+    }
 
     &:focus {
         outline: none;

@@ -2,10 +2,16 @@
 
 .c-emotions {
     margin-top: 10px;
+    margin-left: 35px;
+    text-align: left;
 
     label {
         cursor: pointer;
         padding: 20px;
+
+        @media (max-width: 800px) {
+            padding: 10px;
+        }
 
         input[type="radio"] {
             display: none;

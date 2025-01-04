@@ -16,7 +16,7 @@ const SectionEmotionsSelect: React.FC = () => {
               checked={selectedEmotion === "meh"}
               onChange={() => setSelectedEmotion("meh")}
             />
-            <FaFaceMeh size={25} color={selectedEmotion === 'meh' ? '#ffd31a' : '#fffffe'} />
+            <FaFaceMeh size={35} color={selectedEmotion === 'meh' ? '#ffd31a' : '#fffffe'} />
           </label>
 
           <label key={"smile"}>
@@ -27,7 +27,7 @@ const SectionEmotionsSelect: React.FC = () => {
               checked={selectedEmotion === "smile"}
               onChange={() => setSelectedEmotion("smile")}
             />
-            <FaFaceSmile size={25} color={selectedEmotion === 'smile' ? '#ffd31a' : '#fffffe'} />
+            <FaFaceSmile size={35} color={selectedEmotion === 'smile' ? '#ffd31a' : '#fffffe'} />
           </label>
 
           <label key={"angry"}>
@@ -38,7 +38,7 @@ const SectionEmotionsSelect: React.FC = () => {
               checked={selectedEmotion === "angry"}
               onChange={() => setSelectedEmotion("angry")}
             />
-            <FaFaceAngry size={25} color={selectedEmotion === 'angry' ? '#ffd31a' : '#fffffe'} />
+            <FaFaceAngry size={35} color={selectedEmotion === 'angry' ? '#ffd31a' : '#fffffe'} />
           </label>
 
           <label key={"sad"}>
@@ -49,7 +49,7 @@ const SectionEmotionsSelect: React.FC = () => {
               checked={selectedEmotion === "sad"}
               onChange={() => setSelectedEmotion("sad")}
             />
-            <FaFaceSadTear size={25} color={selectedEmotion === 'sad' ? '#ffd31a' : '#fffffe'} />
+            <FaFaceSadTear size={35} color={selectedEmotion === 'sad' ? '#ffd31a' : '#fffffe'} />
           </label>
 
           <label key={"laugh"}>
@@ -60,7 +60,7 @@ const SectionEmotionsSelect: React.FC = () => {
               checked={selectedEmotion === "laugh"}
               onChange={() => setSelectedEmotion("laugh")}
             />
-            <FaFaceLaughBeam size={25} color={selectedEmotion === 'laugh' ? '#ffd31a' : '#fffffe'} />
+            <FaFaceLaughBeam size={35} color={selectedEmotion === 'laugh' ? '#ffd31a' : '#fffffe'} />
           </label>
       </div>
     );
