@@ -1,0 +1,8 @@
+@use '../foundation/variable' as var;
+
+.c-section-explanation {
+    color: var.$baseColorLV2;
+    text-align: left;
+    align-content: center;
+    padding-left: 20px;
+}

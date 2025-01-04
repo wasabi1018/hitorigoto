@@ -1,0 +1,23 @@
+@use '../foundation/variable' as var;
+
+.c-title-circle {
+    width: 80px;
+    height: 80px;
+    color: var.$baseColor;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: var.$baseColorLV2;
+    text-align: center;
+    align-content: center;
+
+    h2 {
+        writing-mode: vertical-rl;
+        justify-self: center;
+        padding-left: 10px;
+    }
+
+    h2::first-letter {
+        font-size: 1.2rem;
+    }
+}

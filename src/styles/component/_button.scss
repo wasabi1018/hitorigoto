@@ -1,0 +1,22 @@
+@use '../foundation/variable' as var;
+
+.c-button {
+    width: 200px;
+    height: 40px;
+    color: var.$baseColor;
+    background-color: var.$baseColorLV2;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: solid 2px var.$baseColor;
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        color: var.$baseColorLV2;
+        background-color: var.$baseColor;
+        border: solid 2px var.$baseColorLV2;
+    }
+}

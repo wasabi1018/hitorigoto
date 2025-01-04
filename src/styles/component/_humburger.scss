@@ -1,0 +1,43 @@
+@use '../foundation/variable' as var;
+
+.c-humburger {
+    position: absolute;
+    right: 0;
+    top: 34px;
+    width: 140px;
+    height: 80px;
+    color: var.$baseColor;
+    background-color: var.$baseColorLV2;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 4px;;
+    transform: translateY(-120px);
+    transition: transform 0.2s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 12px;
+
+        a {
+            padding-left: 5px;
+            vertical-align: super;
+        }
+    }
+
+    li:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.c-humburger--open {
+    transform: translateY(0);
+    opacity: 1;
+}
