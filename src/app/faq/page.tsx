@@ -1,4 +1,3 @@
-import {NextPage} from 'next';
 import {FAQData} from '../../types/FAQData';
 
 /** よくある質問集 */
@@ -45,11 +44,7 @@ const Faqs: FAQData[] = [
   }
 ];
 
-interface FAQProps {
-    faqData: FAQData[];
-}
-
-const FAQ: NextPage<FAQProps> = () => {
+const FAQ = () => {
 
   return (
       <div className='p-faq'>
