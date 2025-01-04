@@ -3,39 +3,65 @@
 import React, { useState } from 'react';
 import { FaFaceMeh, FaFaceSmile, FaFaceAngry, FaFaceSadTear, FaFaceLaughBeam } from "react-icons/fa6";
 
-interface Emotion {
-    value: string;
-    icon: React.FC;
-    size: string;
-    color: string;
-}
-  
-const emotions: Emotion[] = [
-    { value: 'meh', icon: FaFaceMeh, size: '25px', color: '#ffd31a' },
-    { value: 'smile', icon: FaFaceSmile, size: '25px', color: '#ffd31a' },
-    { value: 'angry', icon: FaFaceAngry, size: '25px', color: '#ffd31a' },
-    { value: 'sad', icon: FaFaceSadTear, size: '25px', color: '#ffd31a' },
-    { value: 'laugh', icon: FaFaceLaughBeam, size: '25px', color: '#ffd31a' },
-];
-  
 const SectionEmotionsSelect: React.FC = () => {
     const [selectedEmotion, setSelectedEmotion] = useState<string>('meh');
   
     return (
       <div className="c-emotions">
-        {emotions.map((emotion) => (
-          <label key={emotion.value}>
+          <label key={"meh"}>
             <input
               type="radio"
               name="emotions"
-              value={emotion.value}
-              checked={selectedEmotion === emotion.value}
-              onChange={(e) => setSelectedEmotion(e.target.value)}
-              style={{ display: 'none' }}
+              value="meh"
+              checked={selectedEmotion === "meh"}
+              onChange={() => setSelectedEmotion("meh")}
             />
-            <emotion.icon size={emotion.size} color={selectedEmotion === emotion.value ? emotion.color : '#fffffe'} />
+            <FaFaceMeh size={25} color={selectedEmotion === 'meh' ? '#ffd31a' : '#fffffe'} />
           </label>
-        ))}
+
+          <label key={"smile"}>
+            <input
+              type="radio"
+              name="emotions"
+              value="smile"
+              checked={selectedEmotion === "smile"}
+              onChange={() => setSelectedEmotion("smile")}
+            />
+            <FaFaceSmile size={25} color={selectedEmotion === 'smile' ? '#ffd31a' : '#fffffe'} />
+          </label>
+
+          <label key={"angry"}>
+            <input
+              type="radio"
+              name="emotions"
+              value="angry"
+              checked={selectedEmotion === "angry"}
+              onChange={() => setSelectedEmotion("angry")}
+            />
+            <FaFaceAngry size={25} color={selectedEmotion === 'angry' ? '#ffd31a' : '#fffffe'} />
+          </label>
+
+          <label key={"sad"}>
+            <input
+              type="radio"
+              name="emotions"
+              value="sad"
+              checked={selectedEmotion === "sad"}
+              onChange={() => setSelectedEmotion("sad")}
+            />
+            <FaFaceSadTear size={25} color={selectedEmotion === 'sad' ? '#ffd31a' : '#fffffe'} />
+          </label>
+
+          <label key={"laugh"}>
+            <input
+              type="radio"
+              name="emotions"
+              value="laugh"
+              checked={selectedEmotion === "laugh"}
+              onChange={() => setSelectedEmotion("laugh")}
+            />
+            <FaFaceLaughBeam size={25} color={selectedEmotion === 'laugh' ? '#ffd31a' : '#fffffe'} />
+          </label>
       </div>
     );
   };

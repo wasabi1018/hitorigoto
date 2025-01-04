@@ -2,8 +2,14 @@
 
 .c-emotions {
     margin-top: 10px;
+
     label {
         cursor: pointer;
         padding: 20px;
+
+        input[type="radio"] {
+            display: none;
+        }
+
     }
 }
