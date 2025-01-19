@@ -2,14 +2,16 @@ import React from 'react';
 
 type SetctionButtonProps = {
     /** ボタン名 */
-    buttonName : string
+    buttonName : string;
+    /** クリック時のイベント */
+    onClickEvent: () => void;
 }
 
 /** セクション ボタン */
-const SectionButton = ({ buttonName }: SetctionButtonProps) => {
+const SectionButton = ({ buttonName, onClickEvent }: SetctionButtonProps) => {
     return (
         <div className='c-button'>
-            <button className='u-mt-10'>
+            <button onClick={onClickEvent} className='u-mt-10'>
                 { buttonName }
             </button>
         </div>

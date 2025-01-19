@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
@@ -29,6 +31,8 @@ export default function RootLayout({
         <Header />
         <div className="l-content">
           {children}
+          { /** トースト通知 */}
+          <ToastContainer position="bottom-right"/>
         </div>
         <Footer />
       </body>
