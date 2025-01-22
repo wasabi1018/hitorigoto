@@ -34,14 +34,14 @@ const FetchHitorigoto = () => {
     return (
       <div>
         {hitorigoto && <p>{hitorigoto.message}</p>}
-        <img width={100} height={100}  src="https://i.pinimg.com/736x/c7/ba/5d/c7ba5dd7c0bcc0edc5d1aa56ce19a118.jpg" />
+        <img width={100} height={100}  src="https://www.webtech.co.jp/blog/wp-content/uploads/2015/01/fb_1200x630.png" />
         <SectionButton onClickEvent={handleButtonClick} buttonName='誰かのヒトリゴトを聞く' />
 
         <Head>
         <title>誰かのヒトリゴト</title>
         <meta property="og:title" content={hitorigoto ? hitorigoto.message : '誰かのヒトリゴト'} />
         <meta property="og:description" content="あなたの心に響く、誰かのヒトリゴト" />
-        <meta property="og:image" content="https://i.pinimg.com/736x/c7/ba/5d/c7ba5dd7c0bcc0edc5d1aa56ce19a118.jpg" />
+        <meta property="og:image" content="https://www.webtech.co.jp/blog/wp-content/uploads/2015/01/fb_1200x630.png" />
         </Head>
       </div>
     );
