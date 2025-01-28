@@ -1,10 +1,10 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import { supabase } from '../lib/supabaseClient';
-import SectionButton from './section-button';
-import { Hitorigoto } from '../types/hitorigoto';
-import GenerateMetaData from './generateMetaData';
+import { supabase } from '../../lib/supabaseClient';
+import SectionButton from '../section-button';
+import { Hitorigoto } from '../../types/hitorigoto';
+import GenerateMetaData from '../generateMetaData';
 
 const FetchHitorigoto = () => {
   const [hitorigoto, setHitorigoto] = useState<Hitorigoto | null>(null);
@@ -34,7 +34,7 @@ const FetchHitorigoto = () => {
     return (
       <div>
         {hitorigoto && <p>{hitorigoto.message}</p>}
-        <img width={100} height={100}  src="https://www.webtech.co.jp/blog/wp-content/uploads/2015/01/fb_1200x630.png" />
+        <img width={100} height={100} src="https://www.webtech.co.jp/blog/wp-content/uploads/2015/01/fb_1200x630.png" />
         <SectionButton onClickEvent={handleButtonClick} buttonName='誰かのヒトリゴトを聞く' />
         <GenerateMetaData />
       </div>
