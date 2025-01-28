@@ -1,4 +1,4 @@
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,10 +15,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   title: "ヒトリゴト",
-//   description: "ヒトリゴトを呟き、誰かに届くサービスです。",
-// };
+export const metadata: Metadata = {
+  title: "ヒトリゴト",
+  description: "ヒトリゴトを呟き、誰かに届くサービスです。",
+  openGraph: {
+    images: [
+      {
+        url: "https://www.webtech.co.jp/blog/wp-content/uploads/2015/01/fb_1200x630.png",
+        alt: "test画像",
+      },
+    ],
+  },
+};
 
 export default function RootLayout({
   children,
