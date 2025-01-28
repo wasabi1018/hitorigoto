@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" prefix="og: http://ogp.me/ns#">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         <div className="l-content">
