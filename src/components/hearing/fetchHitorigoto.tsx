@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabaseClient';
 import SectionButton from '../section-button';
 import { Hitorigoto } from '../../types/hitorigoto';
-import GenerateMetaData from '../generateMetaData';
+import GenerateMetaData from '../metaData/generateMetaData';
 
 const FetchHitorigoto = () => {
   const [hitorigoto, setHitorigoto] = useState<Hitorigoto | null>(null);
