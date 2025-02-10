@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname  } from 'next/navigation';
 import Head from 'next/head';
+import Image from 'next/image';
 import { supabase } from '../../lib/supabaseClient';
 import { Hitorigoto } from '../../types/hitorigoto';
 import SectionButton from '../section-button';
@@ -70,7 +71,13 @@ const FetchHitorigoto = () => {
               </Head>
               <div className='p-modal-content'>
                 {hitorigoto && <p>{hitorigoto.message}</p>}
-                <img src="https://wepress.web-magazine.jp/wp-content/uploads/2019/10/ogp2.jpg" />
+                <Image
+                  src="https://wepress.web-magazine.jp/wp-content/uploads/2019/10/ogp2.jpg"
+                  alt="OGP image"
+                  layout="responsive"
+                  width={1200}
+                  height={630}  
+                />
                <button onClick={handleCloseModal}>閉じる</button>
                </div>
             </div>
